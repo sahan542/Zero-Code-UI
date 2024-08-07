@@ -1,0 +1,181 @@
+body {
+    font-family: "Roboto", sans-serif;
+
+    .search-input {
+        border: none;
+        outline: none;
+        box-shadow: none;
+        width: 100px; /* Adjust the width as needed */
+        background-color: transparent; /* Makes the background transparent */
+    }
+    .search-input::placeholder {
+        color: #6c757d; /* Placeholder color */
+    }
+}
+
+.web-banner{
+    background-color: rgb(169, 169, 247);
+    border-radius: 15px;
+}
+.row{
+
+}
+.container{
+    background-color: red;
+}
+
+.banner-left{
+    margin-top: 0px;
+}
+h1{
+    font-size: 400%;
+    color: black;
+}
+.btn{
+    background-color: black;
+    color: white;
+}
+.btn:hover{
+    background-color: black;
+}
+.banner-left p{
+    width: 95%;
+    text-align: justify;
+
+
+}
+.banner-right{
+    padding-left: 80px;
+
+}
+img{
+    align-items: center;
+    justify-content: center;
+}
+.web-banner-under {
+    text-align: center; 
+}
+
+.web-banner-under span {
+    display: inline-flex; 
+    align-items: center; 
+    text-align: justify; 
+    width: 100%; /
+    justify-content: center; 
+}
+/* .parallax section styling */
+.parallax{
+    border-radius: 15px;
+}
+.parallax-img-card {
+    border: ;  
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   */
+    border-radius: 15px; 
+    padding: 15px;
+}
+.parallax-img-card img {
+    width: 100%;
+    height: auto;
+    background-color: #ededed;
+    margin-bottom: 0; /* Remove any margin bottom on the image */
+    padding-bottom: 0; /* Remove any padding bottom on the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; 
+}
+.parallax-img-text-right .btn {
+    border: 2px solid black; 
+    background-color: white; 
+    padding: 5px 10px; 
+    border-radius: 4px;
+}
+.line-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line-container .btn {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+}
+.line-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid black;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+/* .get-ahead section styling */
+.collab-right-main {
+    position: relative;
+    background-image: url('./assets/zero-code-2.jpg');
+    background-size: cover;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensure the overlay doesn't overflow the container */
+}
+
+.collab-right-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust color and opacity here */
+    border-radius: 15px; /* Match border radius to container */
+    z-index: 1; /* Ensure overlay is above the background but below other content */
+}
+
+.collab-right-main > * {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+}
+
+/*best-seller section styling */
+.best-seller{
+    border-radius: 15px;
+}
+.best-seller-img-card {
+    border: ;  
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   */
+    border-radius: 15px; 
+    padding: 15px;
+}
+.best-seller-img-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0; /* Remove any margin bottom on the image */
+    padding-bottom: 0; /* Remove any padding bottom on the image */
+
+    border-radius: 15px; 
+}
+.best-seller-img-text-right .btn {
+    border: 2px solid black; 
+    background-color: white; 
+    padding: 5px 10px; 
+    border-radius: 4px;
+}
+
+
+/* .get-ahead section styling */
+.get-ahead{
+    background-image: url('./assets/zero-code-2.jpg');
+    background-size: cover;
+    border-radius: 15px;
+}
+.star-icon {
+    background-color: gold; /* Change this to any color you like */
+}
+
+
+
