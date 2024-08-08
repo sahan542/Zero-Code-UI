@@ -5,11 +5,11 @@ body {
         border: none;
         outline: none;
         box-shadow: none;
-        width: 100px; /* Adjust the width as needed */
-        background-color: transparent; /* Makes the background transparent */
+        width: 100px; 
+        background-color: transparent; 
     }
     .search-input::placeholder {
-        color: #6c757d; /* Placeholder color */
+        color: #6c757d; 
     }
 }
 
@@ -69,7 +69,6 @@ img{
 }
 .parallax-img-card {
     border: ;  
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   */
     border-radius: 15px; 
     padding: 15px;
 }
@@ -77,8 +76,8 @@ img{
     width: 100%;
     height: auto;
     background-color: #ededed;
-    margin-bottom: 0; /* Remove any margin bottom on the image */
-    padding-bottom: 0; /* Remove any padding bottom on the image */
+    margin-bottom: 0; 
+    padding-bottom: 0; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 15px; 
 }
@@ -112,6 +111,11 @@ img{
     transform: translateY(-50%);
     z-index: 0;
 }
+.collapse-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
 /* .get-ahead section styling */
 .collab-right-main {
@@ -121,7 +125,7 @@ img{
     border-radius: 15px;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Ensure the overlay doesn't overflow the container */
+    overflow: hidden; 
 }
 
 .collab-right-main::before {
@@ -131,31 +135,51 @@ img{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Adjust color and opacity here */
-    border-radius: 15px; /* Match border radius to container */
-    z-index: 1; /* Ensure overlay is above the background but below other content */
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 15px; 
+    z-index: 1; 
 }
 
 .collab-right-main > * {
     position: relative;
-    z-index: 2; /* Ensure content is above the overlay */
+    z-index: 2; 
+}
+.collableft-left-sub h2{
+    font-size: 250%;
+}
+.parallax-img-card {
+    position: relative;
 }
 
+.circle-text {
+    position: absolute;
+    bottom: 50px; 
+    left: 50%;
+    transform: translateX(-50%) rotate(-10deg);
+    width: 250px; 
+    height: 250px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 183, 0, 0.825); 
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    font-size: 40px; 
+    text-align: center;
+}
 /*best-seller section styling */
 .best-seller{
     border-radius: 15px;
 }
 .best-seller-img-card {
-    border: ;  
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   */
     border-radius: 15px; 
     padding: 15px;
 }
 .best-seller-img-card img {
     width: 100%;
     height: auto;
-    margin-bottom: 0; /* Remove any margin bottom on the image */
-    padding-bottom: 0; /* Remove any padding bottom on the image */
+    margin-bottom: 0; 
+    padding-bottom: 0; 
 
     border-radius: 15px; 
 }
@@ -174,8 +198,579 @@ img{
     border-radius: 15px;
 }
 .star-icon {
-    background-color: gold; /* Change this to any color you like */
+    background-color: gold; 
+}
+
+/* .footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-toggler {
+    display: none;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+  /* media quieries */
+    @media (max-width: 576px) {
+    .best-seller .col-lg-3 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .web-banner .banner-left,
+    .web-banner .banner-right {
+        flex: 0 0 50%; /* Makes each section 50% of the total width */
+        max-width: 50%;
+        text-align: center; /* Optional: center-align the text */
+    }
+
+    .web-banner .banner-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .web-banner .banner-right img {
+        width: 100%; 
+        max-width: none; 
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-12 {
+        flex: 0 0 50%; 
+        max-width: 50%;
+        box-sizing: border-box; 
+    }
+
+    .banner-left h1 {
+        width: 100%;
+        font-size: 320%;
+        text-align: left;
+        margin-left: 10px; 
+    }
+    .banner-left .btn{
+        width: 100%;
+        margin-left: 0;
+        display: flex; 
+        margin-top: 1rem; 
+        padding-left: 0;
+        align-items: center;
+    }
+    .collab-left-main, .collab-right-main {
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+
+    .collab-right-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .collab-right-main-1,
+    .collab-right-main-2,
+    .collab-right-main-3 {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .collab-right-main-2 {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .collab-right-main-2-left,
+    .collab-right-main-2-right {
+        width: 50%; 
+    }
+
+    .collab-right-main-2-left {
+        text-align: center;
+    }
+
+    .collab-right-main-2-right {
+        display: flex;
+        flex-direction: row; 
+        align-items: center; 
+    }
+    .collab-double-photo {
+        flex-direction: row;
+        width: 100%;
+     
+    }
+    .collab-right-main-1 h2 {
+        font-size: ;
+    }
+    h2 {
+        font-size: ;
+    }
+
+
+    .collab-right-main-2 {
+        flex-direction: column;
+    }
+    .collab-right-main-2.collab-right-main-2-left{
+        text-align: left;
+        background-color: blue;
+    }
+
+
+    .collab-right-main-2-left,
+    .collab-right-main-2-right {
+        width: 100%;
+    }
+
+    .collab-right-main-2-left {
+        text-align: center; 
+    }
+
+    .collab-right-main-2-right {
+        text-align: center; 
+    }
+    .collab-double-photo-l img,
+    .collab-double-photo-r img {
+        width: 50%;
+    }
+
+
+    .footer-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .copyright-section {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0; 
+    }
+
+    .collapsible {
+        display: flex;
+        justify-content: flex-end; 
+        width: 100%;
+        padding: 0; 
+    }
+
+    .collapse {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0; 
+    }
+    
+
+    .customer-service,
+    .terms-conditions,
+    .privacy-policy {
+        width: 25%;
+        text-align: center; 
+    }
+    .col-12.col-lg-6 {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .px-2, .px-4 {
+        width: 100%;
+    }
+
+    .px-4 {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    /*best-seller 
+    .row-new{
+        flex-direction: row;
+        align-items: center;
+        background-color: rgb(169, 169, 247);
+        border-radius: 25px;
+    }*/
+    .best-seller-left-image-text-card {
+        flex-direction: row;
+        align-items: center;
+        border-radius: 15px;
+    }
+
+    .best-seller-left {
+        width: 100%;
+    }
+
+    .best-seller-left-image-text-card.best-seller-left-image-text-card {
+        width: 100%;
+        padding: 0;
+    }
+
+    .best-seller-left-image {
+        width: 200px;
+        align-items: center;
+    }
+
+    .best-seller-left-text {
+        display: none;
+    }
+
+    .best-seller-left-image img {
+        flex: auto;
+        width: 10%; 
+        height: 100%;
+    }
+    .wardrobe b{
+font-size: 64%;
+    }
+    .collab-right-main-1 h2{
+        font-size: 200%;
+        color: aqua;
+        text-align: left;
+        width: 75%;
+    }
+    .collab h2{
+        font-size: 300%;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+
+        width: 100%;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+        .collapse-buttons {
+            flex-direction: column;
+            align-items: flex-end;
+            position: relative;
+        }
+
+    @media (min-width: 993px) {
+        .navbar-toggler {
+            display: none;
+        }
+    }
+}
+
+    /*769 px */
+
+    @media (max-width: 769px) {
+        .banner-right img{
+            width: full;
+
+        }
+        .web-banner{
+
+        }
+        .collab h2{
+            font-size: 250%;
+
+        }
+        .custom-h2{
+            font-size:medium;
+        }
+        .wardrobe b{
+            font-size: 49%;
+        }
+        .banner-left h1{
+            font-size: 270%;
+            width: 300px;
+        }
+        .banner-right{
+            width: 300px;
+
+        }
+        .banner-right img {
+            width: 85%; 
+            height: auto; 
+        }
+
+
+    }
+
+    @media (max-width: 578px) {
+        body {
+            font-size: 1.2rem; 
+        }
+    
+        .navbar {
+            width: 190%;
+        }
+    
+        .navbar .container-fluid {
+            max-width: 90%; 
+        }
+        .body{
+            width: 578px;
+        }
+        .container-fluid h1{
+            font-size: 40%;
+        }
+        .row{
+            width: 180%;
+        }
+        .banner-right img{
+            width: full;
+
+        }
+        .web-banner-main{
+            flex-direction: column;
+        }
+        .collab h2{
+            font-size: 250%;
+
+        }
+        .custom-h2{
+            font-size:medium;
+        }
+        .wardrobe b{
+            font-size: 49%;
+        }
+        .banner-left h1 {
+            width: 100%;
+            text-align: center;
+        }
+        .banner-left p {
+            width: 100%;
+            text-align: center;
+        }
+        .banner-right img {
+            width: 500px;
+            height: auto;
+            margin: 0 auto;
+        }
+        .collapse .navbar-nav {
+            flex-direction: column;
+        }
+        .new-dropdown{
+            flex-direction: column;
+            size: 50%;
+        }
+        .image-button{
+            display: none;
+        }
+        .wardrobe-2 b{
+            font-size: 23%;
+        }
+
+    }
+
+
+    @media (max-width: 579px) {
+        .collapse-buttons {
+            flex-direction: column;
+            align-items: flex-end;
+            position: relative;
+        }
+        .navbar-toggler {
+            display: block;
+        }
+    }
+    @media (min-width: 580px) {
+        .navbar-toggler {
+            display: none;
+        }
+    }
+
+
+    @media (max-width:482px) {
+        body {
+            font-size: 1.2rem; 
+        }
+    
+        .navbar {
+            width: 105%; 
+        }
+    
+        .navbar .container-fluid {
+            max-width: 90%; 
+        }
+        .body{
+            width: 480px;
+        }
+        .collapse-buttons {
+            flex-direction: column;
+            align-items: flex-end;
+            position: relative;
+        }
+        .navbar-toggler {
+            display: block;
+        }
+        .navbar-brand {
+            font-size: 0.5rem;
+        }
+        .navbar-toggler {
+            margin-right: 0px;
+        }
+        .nav-link {
+            font-size: 0.875rem;
+        }
+        .search-input {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+        .d-flex.align-items-center {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .bi-bag {
+            margin-top: 0.5rem;
+        }
+        .collapse.navbar-collapse {
+            text-align: left;
+        }
+        .row{
+            flex-direction: column;
+            width: 470px;
+        }
+        .row-card{
+            margin-left: 60px;
+            margin-right: 60px;
+            
+        }
+        .banner-left{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .banner-left.btn{
+            display: flex;
+        }
+        span{
+            flex-direction: row;
+        }
+        .banner-right{
+            display: none;
+        }
+        .web-banner-under{
+            width: 480px;
+        }
+        .web-banner.row{
+            margin-right: 50px;
+        }
+        .banner-left.web-banner-text{
+            width: 350px;
+        }
+        .row-text{
+            width: 400px;
+            text-align: left;
+            font-size: 70%;
+            align-items: center;
+            justify-content: center;
+        }
+        .row-text p{
+            width: 400px;
+            text-align: left;
+        }
+        .footer{
+            display: flex;
+            flex-direction: row;
+        }
+        .footer a{
+            font-size: 80%;
+            width: 260px;
+            text-align: left;
+        }
+        .parallax.row{
+            width: 470px;
+        }
+        .parallax-img-card{
+            width: 350px;
+        }
+        .parallax-img-text{
+            width: 350px;
+        }
+        .h1-responsive {
+            font-size: 70%; 
+        }
+        .collab h2{
+            font-size: 180%;
+
+        }
+        .collab-left-right-sub{
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 40px;
+        }
+        .collableft-left-sub{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .collableft-left-sub p{
+            width: 120%;
+        }
+        .collab-left-right-sub img{
+            width: 100px;
+        }
+        .collab-left-main{
+            width: 480px;
+        }
+        .mx-4 {
+            flex-direction: column-reverse; 
+        }
+        .collab-double-photo {
+            flex-direction: column;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .collab-left-main.collab-double-photo{
+            display: flex;
+            flex-direction: column;
+        }
+        .col-12.col-lg-4 {
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+        .col-12.col-lg-2 {
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+    }
+
+  
+
+
+    .collapse-buttons {
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+    }
+
+@media (min-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+}
